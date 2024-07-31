@@ -6,7 +6,7 @@
       @reset="onReset"
       class="q-gutter-md"
     >
-    
+
       <q-input
         filled
         v-model="name"
@@ -18,7 +18,7 @@
 
       <q-input
         filled
-        v-model="name"
+        v-model="suraname"
         label="Your surname*"
         hint="surname"
         lazy-rules
@@ -57,12 +57,14 @@ export default {
   setup () {
     const $q = useQuasar()
 
-    const name = ref(null)
+    const name = ref(Theerakan)
+    const suraname = ref(kan)
     const age = ref(null)
     const accept = ref(false)
 
     return {
       name,
+      suraname,
       age,
       accept,
 
